@@ -1,0 +1,34 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 HelveticaNeue-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12160\viewh12840\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf0 # Setup Code for the Azure A100s\
+\
+Region: West US 2\
+Security Type: Standard\
+Select Password Authentication\
+Public Inbound Ports: None\
+Disk: Max\
+Open Network Inbound: Port 22\
+\
+scp  -r /Users/nikita/Desktop/BA/NL2SQL/Code nreicher@
+\f1\b \ul ip
+\f0\b0 \ulnone :NL2SQL && ssh -L 8888:localhost:8888 nreicher@
+\f1\b \ul ip
+\f0\b0 \ulnone \
+\
+sudo apt update && sudo apt install -y python3-pip && export PATH="/home/nreicher/.local/bin:$PATH" && pip3 install notebook && pip3 install bitsandbytes && pip3 install transformers && pip3 install git+https://github.com/huggingface/peft.git && pip3 install git+https://github.com/huggingface/accelerate.git && pip3 install datasets && pip3 install trl && jupyter trust NL2SQL/Prepare_BS.ipynb && jupyter trust NL2SQL/Schema_Linkage.ipynb && jupyter trust NL2SQL/SQL_Generation.ipynb && pip3 install ipywidgets && pip3 install tensorboard && sudo apt update && sudo apt install -y ubuntu-drivers-common && sudo ubuntu-drivers install && wget {\field{\*\fldinst{HYPERLINK "https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb"}}{\fldrslt https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb}} && sudo dpkg -i cuda-keyring_1.1-1_all.deb && sudo apt-get update &&  sudo apt-get -y install cuda-toolkit-12-4 && sudo reboot\
+\
+ssh -L 8888:localhost:8888 nreicher@
+\f1\b \ul ip\
+\
+
+\f0\b0 \ulnone screen accelerate launch script.py\
+\
+control + a, after that d\
+\
+screen -r to get back ins}
