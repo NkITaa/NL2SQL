@@ -1,8 +1,6 @@
-Title
+# Bachelors Thesis: A Comparison of Chunking and Prompting Strategies for Large Text Data Processing in Language Models
 
-Bachelors Thesis: A Comparison of Chunking and Prompting Strategies for Large Text Data Processing in Language Models
-Abstract
-
+##Abstract
 This thesis investigates the effectiveness of chunking and prompting techniques for handling large text datasets in language models, specifically utilizing the Blar AI Framework. Datasets such as Spider and BIRD are employed in this study, and models are trained on prepared data.
 Table of Contents
 
